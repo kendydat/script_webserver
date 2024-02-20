@@ -118,7 +118,7 @@ function setupProject(){
   touch /var/www/$PROJECT/public/index.php
   echo "<?php phpinfo();?>" >>  /var/www/$PROJECT/public/index.php
   
-  sudo wget https://raw.githubusercontent.com/ice-s/script/master/nginx.conf
+  sudo wget https://raw.githubusercontent.com/kendydat/script_webserver/main/nginx.conf
   sudo mv -f ./nginx.conf /etc/nginx/nginx.conf
   systemctl restart nginx
 }
@@ -133,7 +133,7 @@ then
   cd /etc/profile.d
   rm -f /etc/profile.d/greeting-console.sh
   touch /etc/profile.d/greeting-console.sh
-  sudo wget https://raw.githubusercontent.com/ice-s/script/master/greeting.sh
+  sudo wget https://raw.githubusercontent.com/kendydat/script_webserver/main/greeting.sh
   sudo mv -f ./greeting.sh /etc/profile.d/greeting-console.sh
   sudo chmod +x /etc/profile.d/greeting-console.sh
   createSwap
