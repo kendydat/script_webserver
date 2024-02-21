@@ -125,6 +125,7 @@ function setupProject(){
 if [[ $OS_VER == 'CentOS6' ]] || [[ $OS_VER == 'CentOS7' ]] || [[ $OS_VER == 'CentOS8' ]] ;
 then
   yum update -y
+  amazon-linux-extras install epel -y
   yum install git -y
   yum install figlet -y
   yum install htop -y

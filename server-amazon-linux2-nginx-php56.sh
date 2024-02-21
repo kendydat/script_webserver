@@ -125,6 +125,7 @@ function setupProject(){
 if [[ $OS_VER == 'CentOS6' ]] || [[ $OS_VER == 'CentOS7' ]] || [[ $OS_VER == 'CentOS8' ]] ;
 then
   yum update -y
+  amazon-linux-extras install epel -y
   yum install git -y
   #yum install https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/f/figlet-2.2.5-9.el7.x86_64.rpm -y
   #yum install figlet -y
