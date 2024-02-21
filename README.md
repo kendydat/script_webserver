@@ -13,7 +13,8 @@
 </ol><code-block _nghost-ng-c3863015178="" ng-version="0.0.0-PLACEHOLDER"><!----><div _ngcontent-ng-c3863015178="" class="code-block ng-star-inserted"><!----><pre _ngcontent-ng-c3863015178=""><code _ngcontent-ng-c3863015178="" role="text" data-test-id="code-content" class="code-container no-decoration-radius">git clone https://github.com/kendydat/script_webserver.git
 </code></pre><!----><!----><!----><!----></div><!----></code-block><ol data-sourcepos="29:1-34:0" start="2">
 <li data-sourcepos="29:1-30:0">
-<p data-sourcepos="29:4-29:87">Upload the <code>server-amazon-linux2-nginx-php74.sh</code> file to your Amazon Linux 2 server.</p>
+<p data-sourcepos="29:4-29:87">Upload the <code>server-amazon-linux2-nginx-php74.sh</code> file to your Amazon Linux 2 server.(or download <code-block>curl -o server-amazon-linux2-nginx-php74.sh https://raw.githubusercontent.com/kendydat/script_webserver/main/server-amazon-linux2-nginx-php74.sh</code-block>
+)</p>
 </li>
 <li data-sourcepos="31:1-32:0">
 <p data-sourcepos="31:4-31:92">Connect to your server via SSH and navigate to the directory where the script is located.</p>
