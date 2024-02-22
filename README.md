@@ -42,3 +42,97 @@
 <li data-sourcepos="60:1-60:108">The script may require additional software to be installed. Confirm these installations before proceeding.</li>
 <li data-sourcepos="61:1-62:0">If you encounter any issues while running the script, please refer to the documentation or contact a professional for assistance.</li>
 </ul></div>
+
+
+<div _ngcontent-ng-c3190845649="" class="markdown markdown-main-panel ui-v2-enabled" dir="ltr" style="--animation-duration: 600ms; --fade-animation-function: cubic-bezier(0.05, 0.7, 0.91, 1);"><h2 data-sourcepos="1:1-1:31" class="">Purpose of the shell script centos7_php80.sh</h2><span>
+</span><p data-sourcepos="3:1-3:20"><strong>Primary Purpose:</strong></p><span>
+</span><ul data-sourcepos="5:1-5:39"><span>
+</span><li data-sourcepos="5:1-5:39"><strong>Automates the setup of a web server environment for PHP projects on CentOS 7 and compatible systems.</strong></li><span>
+</span></ul><span>
+</span><p data-sourcepos="7:1-7:14"><strong>Key Tasks:</strong></p><span>
+</span><ol data-sourcepos="9:1-14:38"><span>
+</span><li data-sourcepos="9:1-9:64"><strong>Checks for root privileges and verifies OS compatibility.</strong></li><span>
+</span><li data-sourcepos="10:1-14:38"><strong>Installs essential packages:</strong><span>
+</span><ul data-sourcepos="11:4-14:38"><span>
+</span><li data-sourcepos="11:4-11:21"><span>Nginx web server</span></li><span>
+</span><li data-sourcepos="12:4-12:12"><span>PHP 8.</span><span>0</span></li><span>
+</span><li data-sourcepos="13:4-13:51"><span>PHP extensions (mbstring,</span><span> xml,</span><span> gd,</span><span> zip,</span><span> redis)</span></li><span>
+</span><li data-sourcepos="14:4-14:38"><span>Composer (PHP dependency manager)</span></li><span>
+</span><li data-sourcepos="15:4-15:38"><span>Node.</span><span>js and pm2 (process manager)</span></li><span>
+</span><li data-sourcepos="16:4-16:33"><span>Redis (in-memory data store)</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span><li data-sourcepos="17:1-19:51"><strong>Configures Nginx and PHP-FPM:</strong><span>
+</span><ul data-sourcepos="18:4-19:51"><span>
+</span><li data-sourcepos="18:4-18:66"><span>Sets user and group ownership for Nginx and PHP-FPM processes</span></li><span>
+</span><li data-sourcepos="19:4-19:51"><span>Tunes PHP-FPM settings for optimal performance</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span><li data-sourcepos="20:1-24:39"><strong>Sets up a new project:</strong><span>
+</span><ul data-sourcepos="21:4-24:39"><span>
+</span><li data-sourcepos="21:4-21:29"><span>Prompts for project name</span></li><span>
+</span><li data-sourcepos="22:4-22:53"><span>Creates Nginx configuration file for the project</span></li><span>
+</span><li data-sourcepos="23:4-23:40"><span>Creates project directory structure</span></li><span>
+</span><li data-sourcepos="24:4-24:39"><span>Sets permissions for project files</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span><li data-sourcepos="25:1-25:5"><strong>Performs additional system configurations:</strong><span>
+</span><ul data-sourcepos="26:4-30:0"><span>
+</span><li data-sourcepos="26:4-26:46"><span>Adds a swap file (if not already present)</span></li><span>
+</span><li data-sourcepos="27:4-27:32"><span>Sets the time zone to Tokyo</span></li><span>
+</span><li data-sourcepos="28:4-28:48"><span>Installs optional tools (git,</span><span> figlet,</span><span> htop)</span></li><span>
+</span><li data-sourcepos="29:4-30:0"><span>Downloads and enables a custom greeting script</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span></ol><span>
+</span><p data-sourcepos="31:1-31:19"><strong>Intended Usage:</strong></p><span>
+</span><ul data-sourcepos="33:1-34:92"><span>
+</span><li data-sourcepos="33:1-33:114"><span>Designed to simplify the process of setting up a web server for PHP development on CentOS 7 and similar systems.</span></li><span>
+</span><li data-sourcepos="34:1-34:92"><span>Can be executed with root privileges to automate the installation and configuration steps.</span></li><span>
+</span></ul><span>
+</span></div>
+
+<div _ngcontent-ng-c3190845649="" class="markdown markdown-main-panel ui-v2-enabled" dir="ltr" style="--animation-duration: 600ms; --fade-animation-function: cubic-bezier(0.05, 0.7, 0.91, 1);"><h2 data-sourcepos="1:1-1:31" class="">Purpose of the shell script server-amazon-linux2-nginx-php56.sh:</h2><span>
+</span><p data-sourcepos="3:1-3:88"><strong>To set up and configure a web server environment for PHP projects on Amazon Linux 2.</strong></p><span>
+</span><p data-sourcepos="5:1-5:14"><strong>Key tasks:</strong></p><span>
+</span><ol data-sourcepos="7:1-9:12"><span>
+</span><li data-sourcepos="7:1-9:12"><strong>Check for root privileges and operating system:</strong><span>
+</span><ul data-sourcepos="8:5-9:12"><span>
+</span><li data-sourcepos="8:5-8:73"><span>Ensure the user is running the script with root or sudo privileges.</span></li><span>
+</span><li data-sourcepos="9:5-9:12"><span>Verify the operating system is Amazon Linux 2.</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span><li data-sourcepos="10:1-12:11"><strong>Install essential packages:</strong><span>
+</span><ul data-sourcepos="11:5-12:11"><span>
+</span><li data-sourcepos="11:5-11:24"><span>Nginx (web server)</span></li><span>
+</span><li data-sourcepos="12:5-12:11"><span>PHP 5.</span><span>6 (version can be changed if needed)</span></li><span>
+</span><li data-sourcepos="13:5-13:66"><span>PHP extensions (mbstring,</span><span> gd,</span><span> mysql,</span><span> ldap,</span><span> redis,</span><span> xml,</span><span> intl,</span><span> bcmath)</span></li><span>
+</span><li data-sourcepos="14:5-14:36"><span>Composer (PHP library manager)</span></li><span>
+</span><li data-sourcepos="15:5-15:35"><span>Git (version control support)</span></li><span>
+</span><li data-sourcepos="16:5-16:40"><span>Figlet (display ASCII art banners)</span></li><span>
+</span><li data-sourcepos="17:5-17:39"><span>Htop (system performance monitor)</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span><li data-sourcepos="18:1-20:48"><strong>Configure Nginx and PHP-FPM:</strong><span>
+</span><ul data-sourcepos="19:5-20:48"><span>
+</span><li data-sourcepos="19:5-19:50"><span>Set up user and group for Nginx and PHP-FPM.</span></li><span>
+</span><li data-sourcepos="20:5-20:48"><span>Optimize PHP-FPM settings for performance.</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span><li data-sourcepos="21:1-25:5"><strong>Set up a new project:</strong><span>
+</span><ul data-sourcepos="22:5-25:5"><span>
+</span><li data-sourcepos="22:5-22:48"><span>Prompt the user to enter the project name.</span></li><span>
+</span><li data-sourcepos="23:5-23:49"><span>Create Nginx configuration for the project.</span></li><span>
+</span><li data-sourcepos="24:5-24:41"><span>Create project directory structure.</span></li><span>
+</span><li data-sourcepos="25:5-25:5"><span>Set permissions for project files.</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span><li data-sourcepos="26:1-30:0"><strong>Perform additional system configurations:</strong><span>
+</span><ul data-sourcepos="27:5-30:0"><span>
+</span><li data-sourcepos="27:5-27:33"><span>Create swap file (optional)</span></li><span>
+</span><li data-sourcepos="28:5-28:27"><span>Set timezone to Tokyo</span></li><span>
+</span><li data-sourcepos="29:5-30:0"><span>Install greeting script (optional)</span></li><span>
+</span></ul><span>
+</span></li><span>
+</span></ol><span>
+</span></div>
